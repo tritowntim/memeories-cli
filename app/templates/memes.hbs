@@ -1,0 +1,11 @@
+<div class="memes">
+  <ul>
+    {{#each meme in model}}
+    <li>
+      {{meme.name}}
+    </li>
+    {{/each}}
+  </ul>
+</div>
+
+{{outlet}}

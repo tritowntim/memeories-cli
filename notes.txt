@@ -1,0 +1,10 @@
+
+ember new memeories-cli
+
+ember g adapter application
+
+ember serve --proxy http://localhost:3000
+
+ember generate resource memes name:text funny:boolean description:text emoji_pattern:text
+
+TODO: css

@@ -6,7 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('memes', function() {});
+  this.resource('memes', function() {
+    this.route('show', { path: ':meme_id' });
+  });
 });
 
 export default Router;
